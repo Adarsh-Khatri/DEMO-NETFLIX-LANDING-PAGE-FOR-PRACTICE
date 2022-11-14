@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="common" id="div_1">
+            <div class="inner_common" id="logo"><img src="image/logo_netflix.png" alt=""></div>
+            <div class="lang-sign_in inner_common">
+                <p id="lang_selector">English<i class="fa-solid fa-play"></i></p>
+                <p id="sign_in">Sign In</p>
+            </div>
+            <div class="inner_common" id="click_to_action">
+                <h1>Unlimited movies, TV shows and more.</h1>
+                <h4>Watch anywhere. Cancel anytime.</h4>
+                <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
+                <div id="input_container">
+                    <input type="text" placeholder="Email address">
+                    <span class="get_started">Get Started ></span>
+                </div>
+            </div>
+        </div>
+        <div class="common" id="div_2">
+            <div id="textbox_2">
+                <h1>Enjoy on your TV.</h1>
+                <h4>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h4>
+            </div>
+            <img src="image/tv.png" alt="netflix_tv">
+        </div>
+        <div class="common" id="div_3">
+            <img src="image/mobile.jpg" alt="mobile_netflix">
+            <div id="textbox_3">
+                <h1>Download your shows to watch offline.</h1>
+                <h4>Save your favourites easily and always have something to watch.</h4>
+            </div>
+        </div>
+        <div class="common" id="div_4">
+            <div id="textbox_4">
+                <h1>Watch everywhere.</h1>
+                <h4>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h4>
+            </div>
+            <img src="image/3-in-1-device.png" alt="3-in-1-device">
+        </div>
+        <div class="common" id="div_5"> <img src="image/children.png" alt="children">
+
+            <div id="textbox_5">
+                <h1>Create profiles for children.</h1>
+                <h4>Send children on adventures with their favourite characters in a space made just for them—free with
+                    your membership.</h4>
+            </div>
+        </div>
+        <div class="common" id="div_6">
+            <h1>Frequently Asked Questions</h1>
+            <div id="faq">
+                <div id="faq_1">
+                    <h4>What is Netflix?</h4>
+                    <i class="fa-light fa-plus"></i>
+                </div>
+                <div id="faq_2">
+                    <h4>How much does Netflix cost?</h4>
+                    <i class="fa-light fa-plus"></i>
+                </div>
+                <div id="faq_3">
+                    <h4>Where can I Watch?</h4>
+                    <i class="fa-light fa-plus"></i>
+                </div>
+                <div id="faq_4">
+                    <h4>How do I cancel?</h4>
+                    <i class="fa-light fa-plus"></i>
+                </div>
+                <div id="faq_5">
+                    <h4>What can I watch on Netflix?</h4>
+                    <i class="fa-light fa-plus"></i>
+                </div>
+                <div id="faq_6">
+                    <h4>Is Netflix good for kids?</h4>
+                    <i class="fa-light fa-plus"></i>
+                </div>
+            </div>
+            <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
+            <div id="input_container" class="second_input">
+                <input type="text" placeholder="Email address">
+                <span class="get_started">Get Started ></span>
+            </div>
+
+        </div>
+        <div class="common" id="div_7">
+            <h5>Questions? Call 000-800-040-1843</h5>
+            <div id="footer_container">
+                <p id="_1">FAQ</p>
+                <p id="_2">Help Center</p>
+                <p id="_3">Account</p>
+                <p id="_4">Media Center</p>
+                <p id="_5">Investor Relations</p>
+                <p id="_6">Jobs</p>
+                <p id="_7">Ways to Watch</p>
+                <p id="_8">Terms of Use</p>
+                <p id="_9">Privacy</p>
+                <p id="_10">Cookie Preferences</p>
+                <p id="_11">Corporate Information</p>
+                <p id="_12">Contact Us</p>
+                <p id="_13">Speed Test</p>
+                <p id="_14">Legal Notices</p>
+                <p id="_15">Only on Netflix</p>
+            </div>
+            <div id="bottom_lang">
+                <p id="lang_selector_bottom">English</p>
+                <i class="fa-solid fa-play"></i>
+                <div id="choose_lang">
+                    <p id="choose_lang_hindi">Hindi</p>
+                    <p id="choose_lang_english">English</p>
+                </div>
+            </div>
+
+            <footer>Netflix India</footer>
+        </div>
+    </div>
+
+    <script>
+
+        const lang_selector_bottom = document.getElementById("lang_selector_bottom");
+
+        const choose_lang = document.getElementById("choose_lang");
+        choose_lang.addEventListener("click", textChange);
+        function textChange(e) {
+            lang_selector_bottom.innerHTML = e.target.innerHTML;
+        }
+
+    </script>
+
+</body>
+
+</html>
